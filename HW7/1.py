@@ -24,6 +24,7 @@ class Matrix:
                     break
                 i -= 1
             result.append(temp_list)
+        # Визуализация матрицы
         visualize = ''
         for col in result:
             visualize += f'{col}\n'
@@ -37,6 +38,7 @@ class Matrix:
 
         return visualize
 
+    # Проверка матрицы
     def matrix_check(self, matrix):
         col_num = len(matrix[0])
         for col in matrix:
@@ -59,7 +61,7 @@ class Matrix:
 
 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-matrix2 = [[7, 8, 9], [4, 5, 6], [1, 2, 3]]
+matrix2 = [[7, 8, 9], [4, 5, 6], [1, 4, 3]]
 my_matrix = Matrix(matrix)
 my_matrix2 = Matrix(matrix2)
 
